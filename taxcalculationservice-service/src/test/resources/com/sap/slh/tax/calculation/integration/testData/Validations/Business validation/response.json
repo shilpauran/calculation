@@ -1,0 +1,27 @@
+{
+    "status": "INVALID_REQUEST",
+    "processingStatusCode": "REQUEST_NOT_VALID",
+    "statusMessage": "Bad request",
+    "result": null,
+    "error": {
+        "errorId": "##string",
+        "details": [
+            {
+                "field": "items[1].id",
+                "message": "The item ID already exists in the document.",
+                "errorCode": "ITEM_ID_EXISTS"
+            },
+            {
+                "field": "items[1].taxes[0].taxRate",
+                "message": "The taxRate parameter is missing.",
+                "errorCode": "TAX_RATE_MISSING"
+            },
+            {
+                "field": "items[1].taxes",
+                "message": "The tax ID already exists for the item in the document.",
+                "errorCode": "TAX_ID_EXISTS"
+            }
+        ]
+    },
+    "warning": null
+}

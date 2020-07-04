@@ -1,0 +1,93 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].unitPrice",
+                "NotNull.taxCalculationRequest.items.unitPrice",
+                "NotNull.items[0].unitPrice",
+                "NotNull.items.unitPrice",
+                "NotNull.unitPrice",
+                "NotNull.java.math.BigDecimal",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].unitPrice",
+                        "items[0].unitPrice"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].unitPrice",
+                    "code": "items[0].unitPrice"
+                }
+            ],
+            "defaultMessage": "error.item.unitPrice.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].unitPrice",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[0].taxEventCode",
+                "NotBlank.taxCalculationRequest.items.taxEventCode",
+                "NotBlank.items[0].taxEventCode",
+                "NotBlank.items.taxEventCode",
+                "NotBlank.taxEventCode",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].taxEventCode",
+                        "items[0].taxEventCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].taxEventCode",
+                    "code": "items[0].taxEventCode"
+                }
+            ],
+            "defaultMessage": "error.item.taxEventCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].taxEventCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].quantity",
+                "NotNull.taxCalculationRequest.items.quantity",
+                "NotNull.items[0].quantity",
+                "NotNull.items.quantity",
+                "NotNull.quantity",
+                "NotNull.java.math.BigDecimal",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].quantity",
+                        "items[0].quantity"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].quantity",
+                    "code": "items[0].quantity"
+                }
+            ],
+            "defaultMessage": "error.item.quantity.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].quantity",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 3",
+    "path": "/api/v1/tax/calculate"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "SO_1",
+    "date": "2020-06-27",
+    "amountTypeCode": "NET",
+    "currencyCode": "CAD",
+    "items": [
+        {
+            "id": "Item1",
+            "quantity": 10,
+            "unitPrice": 10,
+            "countryRegionCode": "BE",
+            "taxEventCode": "11",
+            "isTaxEventNonTaxable": true,
+            "taxes": [
+                {
+                    "id": "1",
+                    "taxTypeCode": "1",
+                    "dueCategoryCode": "RECEIVABLE",
+                    "nonDeductibleTaxRate": 0,
+                    "isReverseChargeRelevant": false
+                }
+            ]
+        }
+    ]
+}

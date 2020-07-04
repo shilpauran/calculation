@@ -1,0 +1,26 @@
+{
+    "id": "SO_1",
+    "date": "2019-08-27",
+    "amountTypeCode": "GROSS",
+    "currencyCode": "CAD",
+    "items": [
+        {
+            "id": "Item1",
+            "quantity": 10,
+            "unitPrice": 10,
+            "countryRegionCode": "CA",
+            "taxEventCode": "11",
+            "isTaxEventNonTaxable": false,
+            "taxes": [
+                {
+                    "id": "1",
+                    "taxTypeCode": "3",
+                    "taxRate": 5,
+                    "dueCategoryCode": "RECEIVABLE",
+                    "nonDeductibleTaxRate": 0,
+                    "isReverseChargeRelevant": false
+                }
+            ]
+        }
+    ]
+}

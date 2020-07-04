@@ -1,0 +1,39 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[0].taxes[1].taxTypeCode",
+                "NotBlank.taxCalculationRequest.items[0].taxes.taxTypeCode",
+                "NotBlank.taxCalculationRequest.items.taxes.taxTypeCode",
+                "NotBlank.items[0].taxes[1].taxTypeCode",
+                "NotBlank.items[0].taxes.taxTypeCode",
+                "NotBlank.items.taxes.taxTypeCode",
+                "NotBlank.taxTypeCode",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].taxes[1].taxTypeCode",
+                        "items[0].taxes[1].taxTypeCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].taxes[1].taxTypeCode",
+                    "code": "items[0].taxes[1].taxTypeCode"
+                }
+            ],
+            "defaultMessage": "error.tax.taxTypeCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].taxes[1].taxTypeCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 1",
+    "path": "/api/v1/tax/calculate"
+}

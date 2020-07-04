@@ -1,0 +1,31 @@
+{
+    "status": "SUCCESS",
+    "processingStatusCode": "TAX_CALCULATED_SUCCESSFULLY",
+    "statusMessage": "Tax calculated successfully",
+    "result": {
+        "id": "SO_1",
+        "items": [
+            {
+                "id": "Item1",
+                "taxes": [
+                    {
+                        "id": "1",
+                        "taxableBaseAmount": 86.21,
+                        "taxAmount": 6.90,
+                        "deductibleTaxAmount": 6.90,
+                        "nonDeductibleTaxAmount": 0.00
+                    },
+                    {
+                        "id": "2",
+                        "taxableBaseAmount": 86.21,
+                        "taxAmount": 6.90,
+                        "deductibleTaxAmount": 6.90,
+                        "nonDeductibleTaxAmount": 0.00
+                    }
+                ]
+            }
+        ]
+    },
+    "error": null,
+    "warning": null
+}

@@ -1,0 +1,17 @@
+---
+applications:
+- name: tax-json-calc-engine
+  path: target/taxcalculationservice-service.war
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  health-check-type: process
+  buildpack: sap_java_buildpack
+  env:
+     
+     tax_calculation_content_url: https://tax-calculation-content-service.cfapps.sap.hana.ondemand.com
+  
+  services:
+    - rabbitmq
+    - redis
+    - xsuaa

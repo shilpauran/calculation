@@ -1,0 +1,59 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.currencyCode",
+                "NotNull.currencyCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.TaxCalculationRequest$CurrencyCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.currencyCode",
+                        "currencyCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "currencyCode",
+                    "code": "currencyCode"
+                }
+            ],
+            "defaultMessage": "error.document.currencyCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "currencyCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.date",
+                "NotNull.date",
+                "NotNull.java.util.Date",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.date",
+                        "date"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "date",
+                    "code": "date"
+                }
+            ],
+            "defaultMessage": "error.document.date.required",
+            "objectName": "taxCalculationRequest",
+            "field": "date",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 2",
+    "path": "/api/v1/tax/calculate"
+}

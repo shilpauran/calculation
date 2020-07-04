@@ -1,0 +1,35 @@
+---
+applications:
+- name: tax-calculation-service-accep
+  path: target/taxcalculationservice-service.war
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  health-check-type: process
+  buildpack: sap_java_buildpack
+  routes:
+    - route: tax-service-accep.internal.cfapps.sap.hana.ondemand.com/calculation
+  services:
+    - rabbitmq-accep
+    - redis-calculation
+    - BRS
+    - xsuaa
+    - application-logs
+  env:
+    SPRING_RABBITMQ_HOST: ${vcap.services.rabbitmq-accep.credentials.hostname}
+    SPRING_RABBITMQ_PASSWORD: ${vcap.services.rabbitmq-accep.credentials.password}
+    SPRING_RABBITMQ_PORT: ${vcap.services.rabbitmq-accep.credentials.port}
+    SPRING_RABBITMQ_USERNAME: ${vcap.services.rabbitmq-accep.credentials.username}
+    SPRING_RABBITMQ_VIRTUAL-HOST: "${vcap.services.rabbitmq-accep.credentials.virtual_host:/}"
+    BRS_CONFIG_RULE_SERVICE_ID: 4580841b350649c1bc655b489019fcd4
+    BRS_CREDENTIALS_UAA_CLIENTID: ${vcap.services.BRS.credentials.uaa.clientid}
+    BRS_CREDENTIALS_UAA_CLIENTSECRET: ${vcap.services.BRS.credentials.uaa.clientsecret}
+    BRS_CREDENTIALS_UAA_XSAPPNAME: ${vcap.services.BRS.credentials.uaa.xsappname}
+    BRS_CREDENTIALS_REPOSITORY_URL: ${vcap.services.BRS.credentials.repository_url}
+    XSUAA_CREDENTIALS_UAADOMAIN: ${vcap.services.xsuaa.credentials.uaadomain}
+    REDIS_CREDENTIALS_HOSTNAME : ${vcap.services.redis-calculation.credentials.hostname}
+    REDIS_CREDENTIALS_PASSWORD : ${vcap.services.redis-calculation.credentials.password}
+    REDIS_CREDENTIALS_PORT : ${vcap.services.redis-calculation.credentials.port}
+    tax_calculation_content_url: https://tax-calculation-content-service.cfapps.sap.hana.ondemand.com
+
+

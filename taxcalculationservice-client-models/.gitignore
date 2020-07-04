@@ -1,0 +1,11 @@
+.settings
+/bin
+/target/
+.classpath
+.project
+
+.vscode/
+
+.checkstyle
+
+javaw*.log

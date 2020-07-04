@@ -1,0 +1,6 @@
+{
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "Type definition error: [simple type, class com.sap.slh.tax.calculation.model.common.Item$CountryRegionCode]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.sap.slh.tax.calculation.model.common.Item$CountryRegionCode`, problem: A0\n at [Source: (PushbackInputStream); line: 1, column: 152] (through reference chain: com.sap.slh.tax.calculation.model.common.TaxCalculationRequest[\"items\"]->java.util.ArrayList[0]->com.sap.slh.tax.calculation.model.common.Item[\"countryRegionCode\"])",
+    "path": "/api/v1/tax/calculate"
+}

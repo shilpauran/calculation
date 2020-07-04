@@ -1,0 +1,28 @@
+general:
+  gitSshKeyCredentialsId: gitSSH_GSSISLECI
+  githubTokenCredentialsId: github_token_matias
+  uploadUrl: https://github.wdf.sap.corp/api/uploads/
+  
+  whitesourceUserTokenCredentialsId: WhitesourceTokenCredentialsId_I506731
+  whitesourceProductToken: '4aa7cfa4c1e9417581d6006c761ab3310467a2be521d45d4930af9b638872a25'
+  whitesourceProductName: 'SHC - SLHTAX-TAX CALCULATION 200'
+  ppmsCredentialsId: PPMS_Credentials_Id
+  ppmsID: '73554900100200014220'
+  
+steps:
+  executeBuild:
+    xMakeShipmentType: indirectshipment
+    
+  executeFortifyAuditStatusCheck:
+    fortifyCredentialsId: Fortify_Token_I506731
+    
+  executeFortifyScan:
+    fortifyCredentialsId: Fortify_Token_I506731
+      
+  sapCumulusUpload:
+    cumulusFileCredentialsId: 'tax-pipeline-storage-token'
+    
+  slackSendNotification:
+    channel: "#cis-txs-achievers"
+    color: "${buildStatus == 'SUCCESS'?'#008000':'#E60000'}"
+    credentialsId: "I073159_achievers_slack"

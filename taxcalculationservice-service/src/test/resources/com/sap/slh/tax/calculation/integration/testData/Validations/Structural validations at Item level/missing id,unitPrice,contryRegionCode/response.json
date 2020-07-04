@@ -1,0 +1,93 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+	 {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[0].id",
+                "NotBlank.taxCalculationRequest.items.id",
+                "NotBlank.items[0].id",
+                "NotBlank.items.id",
+                "NotBlank.id",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].id",
+                        "items[0].id"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].id",
+                    "code": "items[0].id"
+                }
+            ],
+            "defaultMessage": "error.item.id.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].id",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].unitPrice",
+                "NotNull.taxCalculationRequest.items.unitPrice",
+                "NotNull.items[0].unitPrice",
+                "NotNull.items.unitPrice",
+                "NotNull.unitPrice",
+                "NotNull.java.math.BigDecimal",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].unitPrice",
+                        "items[0].unitPrice"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].unitPrice",
+                    "code": "items[0].unitPrice"
+                }
+            ],
+            "defaultMessage": "error.item.unitPrice.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].unitPrice",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].countryRegionCode",
+                "NotNull.taxCalculationRequest.items.countryRegionCode",
+                "NotNull.items[0].countryRegionCode",
+                "NotNull.items.countryRegionCode",
+                "NotNull.countryRegionCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.Item$CountryRegionCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].countryRegionCode",
+                        "items[0].countryRegionCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].countryRegionCode",
+                    "code": "items[0].countryRegionCode"
+                }
+            ],
+            "defaultMessage": "error.item.countryRegionCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].countryRegionCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 3",
+    "path": "/api/v1/tax/calculate"
+}

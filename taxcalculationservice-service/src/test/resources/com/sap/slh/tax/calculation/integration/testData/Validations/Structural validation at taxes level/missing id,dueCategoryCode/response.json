@@ -1,0 +1,69 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].taxes[0].dueCategoryCode",
+                "NotNull.taxCalculationRequest.items[0].taxes.dueCategoryCode",
+                "NotNull.taxCalculationRequest.items.taxes.dueCategoryCode",
+                "NotNull.items[0].taxes[0].dueCategoryCode",
+                "NotNull.items[0].taxes.dueCategoryCode",
+                "NotNull.items.taxes.dueCategoryCode",
+                "NotNull.dueCategoryCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.TaxLine$DueCategoryCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].taxes[0].dueCategoryCode",
+                        "items[0].taxes[0].dueCategoryCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].taxes[0].dueCategoryCode",
+                    "code": "items[0].taxes[0].dueCategoryCode"
+                }
+            ],
+            "defaultMessage": "error.tax.dueCategoryCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].taxes[0].dueCategoryCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[0].taxes[0].id",
+                "NotBlank.taxCalculationRequest.items[0].taxes.id",
+                "NotBlank.taxCalculationRequest.items.taxes.id",
+                "NotBlank.items[0].taxes[0].id",
+                "NotBlank.items[0].taxes.id",
+                "NotBlank.items.taxes.id",
+                "NotBlank.id",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].taxes[0].id",
+                        "items[0].taxes[0].id"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].taxes[0].id",
+                    "code": "items[0].taxes[0].id"
+                }
+            ],
+            "defaultMessage": "error.tax.id.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].taxes[0].id",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 2",
+    "path": "/api/v1/tax/calculate"
+}

@@ -1,0 +1,267 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].unitPrice",
+                "NotNull.taxCalculationRequest.items.unitPrice",
+                "NotNull.items[0].unitPrice",
+                "NotNull.items.unitPrice",
+                "NotNull.unitPrice",
+                "NotNull.java.math.BigDecimal",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].unitPrice",
+                        "items[0].unitPrice"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].unitPrice",
+                    "code": "items[0].unitPrice"
+                }
+            ],
+            "defaultMessage": "error.item.unitPrice.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].unitPrice",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[1].taxes[0].dueCategoryCode",
+                "NotNull.taxCalculationRequest.items[1].taxes.dueCategoryCode",
+                "NotNull.taxCalculationRequest.items.taxes.dueCategoryCode",
+                "NotNull.items[1].taxes[0].dueCategoryCode",
+                "NotNull.items[1].taxes.dueCategoryCode",
+                "NotNull.items.taxes.dueCategoryCode",
+                "NotNull.dueCategoryCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.TaxLine$DueCategoryCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[1].taxes[0].dueCategoryCode",
+                        "items[1].taxes[0].dueCategoryCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[1].taxes[0].dueCategoryCode",
+                    "code": "items[1].taxes[0].dueCategoryCode"
+                }
+            ],
+            "defaultMessage": "error.tax.dueCategoryCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[1].taxes[0].dueCategoryCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[1].taxes[0].taxTypeCode",
+                "NotBlank.taxCalculationRequest.items[1].taxes.taxTypeCode",
+                "NotBlank.taxCalculationRequest.items.taxes.taxTypeCode",
+                "NotBlank.items[1].taxes[0].taxTypeCode",
+                "NotBlank.items[1].taxes.taxTypeCode",
+                "NotBlank.items.taxes.taxTypeCode",
+                "NotBlank.taxTypeCode",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[1].taxes[0].taxTypeCode",
+                        "items[1].taxes[0].taxTypeCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[1].taxes[0].taxTypeCode",
+                    "code": "items[1].taxes[0].taxTypeCode"
+                }
+            ],
+            "defaultMessage": "error.tax.taxTypeCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[1].taxes[0].taxTypeCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        },
+        {
+            "codes": [
+                "NotEmpty.taxCalculationRequest.items[0].taxes",
+                "NotEmpty.taxCalculationRequest.items.taxes",
+                "NotEmpty.items[0].taxes",
+                "NotEmpty.items.taxes",
+                "NotEmpty.taxes",
+                "NotEmpty.java.util.List",
+                "NotEmpty"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].taxes",
+                        "items[0].taxes"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].taxes",
+                    "code": "items[0].taxes"
+                }
+            ],
+            "defaultMessage": "error.item.taxes.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].taxes",
+            "rejectedValue": [],
+            "bindingFailure": false,
+            "code": "NotEmpty"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].countryRegionCode",
+                "NotNull.taxCalculationRequest.items.countryRegionCode",
+                "NotNull.items[0].countryRegionCode",
+                "NotNull.items.countryRegionCode",
+                "NotNull.countryRegionCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.Item$CountryRegionCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].countryRegionCode",
+                        "items[0].countryRegionCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].countryRegionCode",
+                    "code": "items[0].countryRegionCode"
+                }
+            ],
+            "defaultMessage": "error.item.countryRegionCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].countryRegionCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[0].taxEventCode",
+                "NotBlank.taxCalculationRequest.items.taxEventCode",
+                "NotBlank.items[0].taxEventCode",
+                "NotBlank.items.taxEventCode",
+                "NotBlank.taxEventCode",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].taxEventCode",
+                        "items[0].taxEventCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].taxEventCode",
+                    "code": "items[0].taxEventCode"
+                }
+            ],
+            "defaultMessage": "error.item.taxEventCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].taxEventCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[1].taxes[0].id",
+                "NotBlank.taxCalculationRequest.items[1].taxes.id",
+                "NotBlank.taxCalculationRequest.items.taxes.id",
+                "NotBlank.items[1].taxes[0].id",
+                "NotBlank.items[1].taxes.id",
+                "NotBlank.items.taxes.id",
+                "NotBlank.id",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[1].taxes[0].id",
+                        "items[1].taxes[0].id"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[1].taxes[0].id",
+                    "code": "items[1].taxes[0].id"
+                }
+            ],
+            "defaultMessage": "error.tax.id.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[1].taxes[0].id",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.items[0].quantity",
+                "NotNull.taxCalculationRequest.items.quantity",
+                "NotNull.items[0].quantity",
+                "NotNull.items.quantity",
+                "NotNull.quantity",
+                "NotNull.java.math.BigDecimal",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].quantity",
+                        "items[0].quantity"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].quantity",
+                    "code": "items[0].quantity"
+                }
+            ],
+            "defaultMessage": "error.item.quantity.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].quantity",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.items[0].id",
+                "NotBlank.taxCalculationRequest.items.id",
+                "NotBlank.items[0].id",
+                "NotBlank.items.id",
+                "NotBlank.id",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.items[0].id",
+                        "items[0].id"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "items[0].id",
+                    "code": "items[0].id"
+                }
+            ],
+            "defaultMessage": "error.item.id.required",
+            "objectName": "taxCalculationRequest",
+            "field": "items[0].id",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 9",
+    "path": "/api/v1/tax/calculate"
+}

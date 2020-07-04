@@ -1,0 +1,6 @@
+{
+    "status": 400,
+    "error": "Bad Request",
+    "message": "JSON parse error: Cannot deserialize value of type `java.util.Date` from String \"2019-j7\": not a valid representation (error: Failed to parse Date value '2019-j7': Cannot parse date \"2019-j7\": not compatible with any of standard forms (\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\", \"yyyy-MM-dd'T'HH:mm:ss.SSS\", \"EEE, dd MMM yyyy HH:mm:ss zzz\", \"yyyy-MM-dd\")); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String \"2019-j7\": not a valid representation (error: Failed to parse Date value '2019-j7': Cannot parse date \"2019-j7\": not compatible with any of standard forms (\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\", \"yyyy-MM-dd'T'HH:mm:ss.SSS\", \"EEE, dd MMM yyyy HH:mm:ss zzz\", \"yyyy-MM-dd\"))\n at [Source: (PushbackInputStream); line: 1, column: 21] (through reference chain: com.sap.slh.tax.calculation.model.common.TaxCalculationRequest[\"date\"])",
+    "path": "/api/v1/tax/calculate"
+}

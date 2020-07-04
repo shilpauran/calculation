@@ -1,0 +1,24 @@
+---
+applications:
+- name: tax-calculation-service
+  path: target/taxcalculationservice-service.war
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  health-check-type: process
+  buildpack: sap_java_buildpack
+  env:
+     brs_config_rule_service_id: 4580841b350649c1bc655b489019fcd4
+     brs_export_uaa_url: https://taas-onboarding.authentication.sap.hana.ondemand.com/oauth/token
+     brs_export_client_id: sb-clone-6520fe4c-0e2e-4858-9475-43d221ac68a9!b10263|bpmrulebroker!b1198
+     brs_export_secret: M8wiMnvMAjwZojaaQuUhExkjb2I=
+     brs_export_repository_url: https://bpmrulerepository.cfapps.sap.hana.ondemand.com
+     tax_calculation_content_url: https://tax-calculation-content-service.cfapps.sap.hana.ondemand.com
+  routes:
+    - route: tax-service.cfapps.sap.hana.ondemand.com/calculation
+  services:
+    - rabbitmq
+    - redis-calculation
+    - BRS
+    - xsuaa
+    - application-logs

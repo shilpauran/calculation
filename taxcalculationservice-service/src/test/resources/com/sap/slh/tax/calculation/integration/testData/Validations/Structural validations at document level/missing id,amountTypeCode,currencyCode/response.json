@@ -1,0 +1,84 @@
+{
+    "timestamp": "##string",
+    "status": 400,
+    "error": "Bad Request",
+    "errors": [
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.currencyCode",
+                "NotNull.currencyCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.TaxCalculationRequest$CurrencyCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.currencyCode",
+                        "currencyCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "currencyCode",
+                    "code": "currencyCode"
+                }
+            ],
+            "defaultMessage": "error.document.currencyCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "currencyCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotNull.taxCalculationRequest.amountTypeCode",
+                "NotNull.amountTypeCode",
+                "NotNull.com.sap.slh.tax.calculation.model.common.TaxCalculationRequest$AmountTypeCode",
+                "NotNull"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.amountTypeCode",
+                        "amountTypeCode"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "amountTypeCode",
+                    "code": "amountTypeCode"
+                }
+            ],
+            "defaultMessage": "error.document.amountTypeCode.required",
+            "objectName": "taxCalculationRequest",
+            "field": "amountTypeCode",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotNull"
+        },
+        {
+            "codes": [
+                "NotBlank.taxCalculationRequest.id",
+                "NotBlank.id",
+                "NotBlank.java.lang.String",
+                "NotBlank"
+            ],
+            "arguments": [
+                {
+                    "codes": [
+                        "taxCalculationRequest.id",
+                        "id"
+                    ],
+                    "arguments": null,
+                    "defaultMessage": "id",
+                    "code": "id"
+                }
+            ],
+            "defaultMessage": "error.document.id.required",
+            "objectName": "taxCalculationRequest",
+            "field": "id",
+            "rejectedValue": null,
+            "bindingFailure": false,
+            "code": "NotBlank"
+        }
+    ],
+    "message": "Validation failed for object='taxCalculationRequest'. Error count: 3",
+    "path": "/api/v1/tax/calculate"
+}

@@ -1,0 +1,6 @@
+{
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "Type definition error: [simple type, class com.sap.slh.tax.calculation.model.common.TaxCalculationRequest$CurrencyCode]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.sap.slh.tax.calculation.model.common.TaxCalculationRequest$CurrencyCode`, problem: AC\n at [Source: (PushbackInputStream); line: 1, column: 74] (through reference chain: com.sap.slh.tax.calculation.model.common.TaxCalculationRequest[\"currencyCode\"])",
+    "path": "/api/v1/tax/calculate"
+}
