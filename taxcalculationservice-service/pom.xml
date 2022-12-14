@@ -21,7 +21,7 @@
 		<karate.version>0.9.4</karate.version>
 		<cucumber.reporting.version>3.8.0</cucumber.reporting.version>
 		<java-cfenv-boot.version>2.1.1.RELEASE</java-cfenv-boot.version>
-		<version.snakeyaml>1.26</version.snakeyaml>
+		<version.snakeyaml>1.32</version.snakeyaml>
 		<commons-codec.version>1.14</commons-codec.version>
 
 	</properties>
